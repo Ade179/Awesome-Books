@@ -1,11 +1,10 @@
 /* eslint-disable no-use-before-define */
 
-const title = document.querySelector('.title'); //title input
-const author = document.querySelector('.author'); //author input
-const form = document.querySelector('.form'); //form
-const bookAdd = document.querySelector('.list'); 
+const title = document.querySelector('.title'); // title input
+const author = document.querySelector('.author'); // author input
+const form = document.querySelector('.form'); // form
+const bookAdd = document.querySelector('.list');
 let books = [];
-
 
 function updateUI() {
   bookAdd.innerHTML = '';
@@ -36,20 +35,20 @@ form.addEventListener('submit', (e) => {
 });
 
 function saveBooks(book) {
-    localStorage.setItem('bookInfo', JSON.stringify(book));
-  }
+  localStorage.setItem('bookInfo', JSON.stringify(book));
+}
 if (!localStorage.getItem('bookInfo')) {
   localStorage.setItem('bookInfo', JSON.stringify([]));
 }
 
-  function displayBookData() {
-    books = JSON.parse(localStorage.getItem('bookInfo'));
-    updateUI();
-  }
-  function removeBook() {
-    books.splice(this, 1);
-    saveBooks(books);
-    displayBookData();
-  }
+function displayBookData() {
+  books = JSON.parse(localStorage.getItem('bookInfo'));
+  updateUI();
+}
+function removeBook() {
+  books.splice(this, 1);
+  saveBooks(books);
+  displayBookData();
+}
 
 displayBookData();
