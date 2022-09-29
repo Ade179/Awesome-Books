@@ -6,9 +6,11 @@
   }
  }
 
- //class to add a book to the book array
- 
+ //create bookslist array
+ const bookslist = []
+console.log(bookslist)
 
+//Update the user interface
 
 
 
@@ -27,4 +29,8 @@ formSumbit.addEventListener('submit', function (e){
   const authorinput = document.querySelector('.author').value;
 
   const books = new Book (titleinput, authorinput)
+  bookslist.push(books)
+  
+
+
 }) 
