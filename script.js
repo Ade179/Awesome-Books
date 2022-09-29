@@ -69,7 +69,8 @@ formSumbit.addEventListener('submit', (e) => {
   e.preventDefault();
   if (title && author) {
     awesomeBooks.addBook(title, author);
-    this.reset();
+    document.querySelector('.title').value = '';
+    document.querySelector('.author').value = '';
     updateUI();
   } else {
     const error = document.querySelector('.error');
