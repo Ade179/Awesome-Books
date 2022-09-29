@@ -1,3 +1,55 @@
-* {
-  box-sizing: border-box;
+h1 {
+  text-align: center;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.list {
+  width: 30%;
+  border: 2px solid black;
+}
+
+.container {
+  padding: 0 7px 0 7px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+li {
+  border: none;
+}
+
+li:nth-child(odd) {
+  background-color: rgba(191, 191, 191, 0.792);
+}
+
+p {
+  color: black;
+  font-size: 20px;
+}
+
+input {
+  width: 240px;
+}
+
+button {
+  font-size: 15px;
+}
+
+.add {
+  align-self: flex-end;
+  padding: 10px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
