@@ -1,29 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
-  <title>Books</title>
+  <title>Awesome books</title>
 </head>
-
 <body>
-  <header>
-    <h1>Awesome books</h1>
-  </header>
-  <div class="list-container">
-    <div class="list"></div>
-    <h2 class="new-book">Add a new book</h2>
-    <div class="error"></div>
-    <form class="form" action="">
-      <input type="text" name="" class="title" id="" placeholder="Title">
-      <input type="text" name="" class="author" id="" placeholder="Author">
-      <button type="submit" class="add">Add</button>
+  <nav class="nav-container">
+    <div class="logo">Awesome Books</div>
+    <div class="nav-link">
+      <ul class="nav-ul">
+        <li class="list-link"><a href="#list">List</a></li>
+        <li class="add-new"><a href="#add-book">Add new</a></li>
+        <li class="contact"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="date"></section>
+
+  <section class="books-list">
+      <h1>All Awesome Books</h1>
+      <div id="list" class="list"></div>
+    </section>
+
+  <section class="form">
+    <h2>Add a new Book</h2>
+    <form class="add-book">
+      <div class="error"></div>
+      <input class="title" type="text" placeholder="Title" />
+      <input class="author" type="text" placeholder="Author" />
+      <button class="add" type="submit">Add</button>
     </form>
-  </div>
+  </section>
+
+  <section id="contact" class="contact-container">
+    <h2 class="contact-headline">Contact Information</h2>
+    <p class="contact-paragraph">
+      Do you have any questions or you just want to say "Hello"?<br />You can
+      reach out to us!
+    </p>
+    <ul class="contact-list">
+      <li>Our e-mail: awesome.books@gmail.com</li>
+      <li>Our Phone number: 00-111-123456</li>
+      <li>Address: streetname 22, zip-code, city, country.</li>
+    </ul>
+  </section>
+
+  <footer id="footer" class="footer-container">
+    <div class="copyright">
+      <div class="logo">Awesome-Books</div>
+      <div class="text">2022, Awesome books all rights reserved.</div>
+    </div>
+  </footer>
+  
   <script src="script.js"></script>
 </body>
-
 </html>
