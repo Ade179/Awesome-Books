@@ -2,7 +2,9 @@
 
 # Awesome Books
 
-> This project helps the mastery of objects in Javascript
+> This project helps the mastery of objects in Javascript,
+> it encourages and addition of books by the user which can also be removed at any point in time. 
+> It contains dynamically created DOM Elements created uing Javascript.
 
 
 ## Built With
